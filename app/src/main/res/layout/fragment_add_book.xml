@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="350dp"
+    android:background="@drawable/round_corner_gray"
+    tools:context=".Prompt.add_book">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:background="@drawable/round_corner_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/book_name_tv"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/book_author_tv"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/book_name_tv"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/book_name_tv"
+        app:layout_constraintTop_toBottomOf="@+id/book_name_tv" />
+
+    <EditText
+        android:id="@+id/book_pages_tv"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/book_author_tv"
+        app:layout_constraintTop_toBottomOf="@+id/book_author_tv" />
+
+    <EditText
+        android:id="@+id/book_volume_tv"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/book_author_tv"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/book_pages_tv"
+        app:layout_constraintTop_toBottomOf="@+id/book_author_tv" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Title"
+        app:layout_constraintBottom_toTopOf="@+id/book_name_tv"
+        app:layout_constraintStart_toStartOf="@+id/book_name_tv" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Author"
+        app:layout_constraintBottom_toTopOf="@+id/book_author_tv"
+        app:layout_constraintStart_toStartOf="@+id/book_author_tv" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Pages"
+        app:layout_constraintBottom_toTopOf="@+id/book_pages_tv"
+        app:layout_constraintStart_toStartOf="@+id/book_pages_tv" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Volume"
+        app:layout_constraintBottom_toTopOf="@+id/book_volume_tv"
+        app:layout_constraintStart_toStartOf="@+id/book_volume_tv" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
+        android:textSize="20dp"
+        android:text="Add Book To Data"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add_btn"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="22dp"
+        android:text="ADD BOOK"
+        android:background="@drawable/round_corner_darkgray"
+        app:layout_constraintEnd_toEndOf="@+id/book_volume_tv"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/book_volume_tv"
+        app:layout_constraintTop_toBottomOf="@+id/book_volume_tv" />
+
+    <TextView
+        android:id="@+id/cnl_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:text="CANCEL"
+        app:layout_constraintBottom_toBottomOf="@+id/add_btn"
+        app:layout_constraintEnd_toStartOf="@+id/add_btn"
+        app:layout_constraintTop_toTopOf="@+id/add_btn" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="*"
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toBottomOf="@+id/textView7"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
